@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+
+.header{
+  height: 70px;
+  background: #343a40;
+  padding-left: 40px;
+  padding-right: 20px;
+  color: #fff;
+  z-index: 10000000000;
+}
+.hideright{
+  width: 30px;
+}
+.hide{
+  visibility: hidden;
+ margin-left: -30px;
+  width: 30px;
+}
+
+.logo{
+  line-height: 80px;
+  float: left;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu{
+  float: right;
+  line-height: 80px;
+
+}
+
+.menu a{
+  color: #fff!important;
+  text-decoration: none!important;
+  padding: 0 23px;
+
+  transition: 0.4s;
+
+}
+
+.header .logo{
+  text-decoration-line: none!important;
+  color: white;
+}
+
+.menu a:hover{
+  color: green!important;
+  text-decoration: none!important;
+  padding: 0 33px;
+  transition: 0.4s;
+
+}
+
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #28a745;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+  display: none;
+}
+
+
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    min-height: 700px;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+    z-index: 11111111111;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+
+  }
+
+
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+
+  }
+  .hide
+  {
+    visibility: visible;
+  }
+  .hideright
+  {
+    visibility: hidden;
+  }
+}
