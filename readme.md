@@ -1,4 +1,4 @@
-Image Nepal is an online image editor. User can upload the image from their local device. They can edit the image as per their need. Color adjusting, exposure and rorate features are integrated in this project. The project is made through HTML, CSS, JS, BOOTSTRAP and PHP.
+Image Nepal is an online image editor. User can upload the image from their local device. They can edit the image as per their need. Color adjusting, exposure and rotate features are integrated in this project. The project is made through HTML, CSS, JS, BOOTSTRAP and PHP.
 
 The project might not be in working condition.
 
